@@ -16,3 +16,24 @@
         }
     }
 }
+
+.swap-colors(@f, @b){
+    color: @b;
+    background-color: @f;
+}
+
+
+.rounded-btn(@bg: @btn-bg-color, @fg: white, @font-size, @width: auto, @pad: 1rem, @radius: .5rem){
+    width: @width;
+    padding: @pad;
+    border-radius: @radius;
+    background-color: @bg;
+    text-align: center;
+    padding: @pad;
+    color: @fg;
+    font-size: @font-size;
+    &:hover {
+        .swap-colors(@fg, @bg);
+        border: .1rem solid @bg;
+    }
+}
