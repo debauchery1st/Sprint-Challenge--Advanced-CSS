@@ -16,12 +16,15 @@
     } // navigation/h1
 
     nav {
-        width: 21%;
+        width: 71%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         // .no-decorated-links();
-        .no-decorated-links(1.6rem, @nav-font, @header-font-color, 34%)
+        .no-decorated-links(1.6rem, @nav-font, @header-font-color, 34%);
+        @media @phone {
+            width: 85%;
+        }
     } // navigation/nav
 
 } // navigation

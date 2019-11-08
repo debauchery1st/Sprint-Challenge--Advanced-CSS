@@ -176,7 +176,7 @@ p {
   color: #23293B;
 }
 .navigation nav {
-  width: 21%;
+  width: 71%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -189,6 +189,11 @@ p {
 }
 .navigation nav a:hover {
   color: #6776a5;
+}
+@media (max-width: 500px) {
+  .navigation nav {
+    width: 85%;
+  }
 }
 footer {
   color: #22283B;
