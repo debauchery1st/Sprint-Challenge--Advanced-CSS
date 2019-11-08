@@ -1,1 +1,30 @@
 // Navigation code here
+.navigation {
+    background-color: @nav-bg;
+    width: 100%;
+    height: 10rem;
+    padding: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid @nav-border;
+
+    h1 {
+        font-size: 4.2rem;
+        color: @header-font-color;
+    } // navigation/h1
+
+    nav {
+        width: 71%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // .no-decorated-links();
+        .no-decorated-links(1.6rem, @nav-font, @header-font-color, 34%);
+        @media @phone {
+            width: 85%;
+        }
+    } // navigation/nav
+
+} // navigation
