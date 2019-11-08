@@ -200,6 +200,9 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home .main-header {
+  border-radius: 0.5rem;
+}
 .home .intro h2 {
   padding: 15px;
 }
