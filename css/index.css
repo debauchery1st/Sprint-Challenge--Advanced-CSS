@@ -160,6 +160,36 @@ p {
   width: 100%;
   margin: 0 auto;
 }
+.navigation {
+  background-color: #F6F6F6;
+  width: 100%;
+  height: 10rem;
+  padding: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #F1F1F1;
+}
+.navigation h1 {
+  font-size: 4.2rem;
+  color: #23293B;
+}
+.navigation nav {
+  width: 21%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navigation nav a {
+  font-size: 1.6rem;
+  font-family: #454A59;
+  text-decoration: none;
+  color: #23293B;
+}
+.navigation nav a:hover {
+  color: #5E6164;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
