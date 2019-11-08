@@ -232,6 +232,7 @@ footer {
     flex-direction: row;
     overflow: hidden;
     max-height: 35rem;
+    margin: 0;
   }
   .home .space-images img {
     width: 100%;
@@ -291,6 +292,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 1rem;
   }
   .home .walk .walk-img {
     margin: 2rem 0;
@@ -298,13 +300,14 @@ footer {
   }
   .home .walk .walk-text {
     width: 100%;
+    margin: 0;
   }
   .home .walk .walk-text .btn {
     width: 100%;
-    border-radius: 1rem;
+    border-radius: 0.2rem;
     background-color: #22283A;
     text-align: center;
-    padding: 1rem;
+    padding: 2rem;
     color: white;
     font-size: 2rem;
   }
