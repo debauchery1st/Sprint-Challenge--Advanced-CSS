@@ -1,1 +1,18 @@
 // Mixins Here
+.calc_luminance(@color, @amt, @tolerance){
+    // if the @color is brighter than @tolerance,
+    // darken it by @amt; otherwise lighten the color by @amt.
+    color: if(boolean(luminance(@color) > @tolerance), darken(@color, @amt), lighten(@color, @amt));
+}
+
+.no-decorated-links(@font-size: 1.6rem, @font-family: @nav-font, @font-color: @header-font-color, @bright-hover: 20%, @epsilon: 50%){
+    a {
+        font-size: @font-size;
+        font-family: @font-family;
+        text-decoration: none;
+        color: @font-color;
+        &:hover {
+            .calc_luminance(@font-color, @bright-hover, @epsilon);
+        }
+    }
+}
